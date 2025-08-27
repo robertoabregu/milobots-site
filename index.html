@@ -1,57 +1,92 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="favicon-32.png">
   <title>Milo Bots — Chatbots con IA generativa</title>
-  <meta name="description" content="Respuestas inmediatas para tu negocio con chatbots de IA generativa. Integración con WhatsApp y web.">
+  <meta name="description"
+    content="Respuestas inmediatas para tu negocio con chatbots de IA generativa. Integración con WhatsApp y web.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}</style>
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif
+    }
+  </style>
 </head>
+
 <body class="min-h-screen bg-white text-slate-900">
+  <!-- NAV -->
   <header class="sticky top-0 z-40 w-full bg-white/80 backdrop-blur border-b border-slate-100">
     <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400"></div>
-        <span class="font-extrabold tracking-tight text-xl">Milo <span class="text-emerald-500">Bots</span></span>
+        <img src="logo-128.png" alt="Milo Bots logo" class="h-8 w-8 rounded-full">
+        <span class="font-extrabold tracking-tight text-xl">Milo <span class="text-sky-600">Bots</span></span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#como-funciona" class="hover:text-emerald-600">Cómo funciona</a>
-        <a href="#servicios" class="hover:text-emerald-600">Servicios</a>
-        <a href="#demo" class="hover:text-emerald-600">Demo</a>
-        <a href="#contacto" class="hover:text-emerald-600">Contacto</a>
-        <a id="whatsapp-nav" href="#" class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 font-semibold hover:bg-emerald-100 transition">Hablá por WhatsApp</a>
+        <a href="#como-funciona" class="hover:text-sky-700">Cómo funciona</a>
+        <a href="#servicios" class="hover:text-sky-700">Servicios</a>
+        <a href="#demo" class="hover:text-sky-700">Demo</a>
+        <a href="#contacto" class="hover:text-sky-700">Contacto</a>
+        <a id="whatsapp-nav" href="#"
+          class="inline-flex items-center gap-2 rounded-full border border-sky-300 bg-sky-50 px-4 py-2 font-semibold hover:bg-sky-100 transition"
+          target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-4 w-4">
+            <path
+              d="M16 0C7.164 0 0 7.163 0 16c0 2.817.738 5.547 2.137 7.938L0 32l8.344-2.177A15.926 15.926 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.667 0-5.254-.711-7.51-2.061l-.537-.319-4.96 1.292 1.323-4.84-.351-.56C3.775 21.17 3.2 18.624 3.2 16 3.2 8.825 8.825 3.2 16 3.2S28.8 8.825 28.8 16 23.175 29.333 16 29.333zm7.582-10.237c-.404-.2-2.387-1.179-2.756-1.313-.369-.137-.64-.2-.911.201-.27.398-1.045 1.312-1.28 1.582-.235.266-.47.301-.874.1-.404-.2-1.709-.63-3.254-2.008-1.202-1.072-2.015-2.395-2.25-2.8-.235-.398-.025-.613.176-.812.181-.18.404-.47.606-.705.201-.235.268-.398.404-.667.135-.266.066-.5-.033-.7-.1-.2-.911-2.199-1.249-3.016-.33-.794-.667-.685-.911-.698l-.774-.014c-.27 0-.705.101-1.073.502-.369.398-1.404 1.372-1.404 3.345s1.437 3.878 1.635 4.147c.2.266 2.827 4.316 6.853 6.059.959.414 1.708.662 2.293.85.962.307 1.838.263 2.532.16.772-.115 2.387-.975 2.724-1.916.337-.94.337-1.745.236-1.916-.1-.17-.367-.268-.772-.468z" />
+          </svg>
+          Hablá por WhatsApp
+        </a>
       </nav>
     </div>
   </header>
 
+  <!-- HERO con badge y layout diferenciado -->
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-cyan-50"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-sky-50 via-white to-indigo-50"></div>
     <div class="relative mx-auto max-w-7xl px-6 py-20 grid items-center gap-12 md:grid-cols-2">
       <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
-          Respuestas inmediatas para tu negocio, <span class="text-emerald-600">sin perder tiempo</span>
+        <span
+          class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-sky-100 text-sky-800 ring-1 ring-inset ring-sky-200">Nuevo
+          • IA para tu negocio</span>
+        <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+          Chatbots inteligentes entrenados con <span class="text-sky-700">IA generativa</span>
         </h1>
         <p class="mt-4 text-lg text-slate-700">
-          Creamos chatbots con <strong>IA generativa</strong> que atienden a tus clientes en WhatsApp y en tu web. Respuestas rápidas, empáticas y claras, 24/7.
+          Respuestas claras y precisas en <strong>WhatsApp</strong> y tu web, con el estilo y la voz de tu marca.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a id="whatsapp-hero" href="#" class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700 transition">Hablá conmigo en WhatsApp</a>
-          <a href="#demo" class="inline-flex items-center justify-center rounded-xl px-5 py-3 border border-slate-200 font-semibold hover:bg-slate-50 transition">Ver demo</a>
+          <a id="whatsapp-hero" href="#"
+            class="inline-flex items-center gap-2 justify-center rounded-xl px-5 py-3 bg-sky-600 text-white font-semibold shadow hover:bg-sky-700 transition"
+            target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5">
+              <path
+                d="M16 0C7.164 0 0 7.163 0 16c0 2.817.738 5.547 2.137 7.938L0 32l8.344-2.177A15.926 15.926 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.667 0-5.254-.711-7.51-2.061l-.537-.319-4.96 1.292 1.323-4.84-.351-.56C3.775 21.17 3.2 18.624 3.2 16 3.2 8.825 8.825 3.2 16 3.2S28.8 8.825 28.8 16 23.175 29.333 16 29.333zm7.582-10.237c-.404-.2-2.387-1.179-2.756-1.313-.369-.137-.64-.2-.911.201-.27.398-1.045 1.312-1.28 1.582-.235.266-.47.301-.874.1-.404-.2-1.709-.63-3.254-2.008-1.202-1.072-2.015-2.395-2.25-2.8-.235-.398-.025-.613.176-.812.181-.18.404-.47.606-.705.201-.235.268-.398.404-.667.135-.266.066-.5-.033-.7-.1-.2-.911-2.199-1.249-3.016-.33-.794-.667-.685-.911-.698l-.774-.014c-.27 0-.705.101-1.073.502-.369.398-1.404 1.372-1.404 3.345s1.437 3.878 1.635 4.147c.2.266 2.827 4.316 6.853 6.059.959.414 1.708.662 2.293.85.962.307 1.838.263 2.532.16.772-.115 2.387-.975 2.724-1.916.337-.94.337-1.745.236-1.916-.1-.17-.367-.268-.772-.468z" />
+            </svg>
+            Contactanos por WhatsApp
+          </a>
+          <a href="#demo"
+            class="inline-flex items-center justify-center rounded-xl px-5 py-3 border border-slate-200 font-semibold hover:bg-slate-50 transition">Ver
+            demo</a>
         </div>
         <div class="mt-6 flex items-center gap-4 text-sm text-slate-600">
-          <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Implementación express</span>
-          <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Datos seguros</span>
-          <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Factura</span>
+          <span class="inline-flex items-center gap-2"><span
+              class="h-2 w-2 rounded-full bg-sky-500"></span>Implementación express</span>
+          <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-sky-500"></span>Datos
+            seguros</span>
+          <span class="inline-flex items-center gap-2"><span
+              class="h-2 w-2 rounded-full bg-sky-500"></span>Factura</span>
         </div>
       </div>
+      <!-- Chat mockup en azul -->
       <div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-4">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
           <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-400 to-emerald-400"></div>
+            <img src="logo-128.png" alt="Milo Bots avatar" class="h-10 w-10 rounded-full">
             <div>
               <p class="font-semibold leading-tight">Milo Bots</p>
               <p class="text-xs text-slate-500">en línea ahora</p>
@@ -60,57 +95,62 @@
           <span class="text-xs text-slate-500">WhatsApp</span>
         </div>
         <div class="space-y-3 pt-4 text-sm">
-          <div class="max-w-[80%] rounded-2xl rounded-bl-sm bg-slate-100 p-3">Hola, ¿me pasás el precio del servicio y si puedo sacar turno?</div>
-          <div class="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-emerald-600 text-white p-3 shadow">
+          <div class="max-w-[80%] rounded-2xl rounded-bl-sm bg-slate-100 p-3">Hola, quiero un chatbot para mi negocio
+            ¿cuáles son los beneficios y qué precio tiene?</div>
+          <div class="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-sky-600 text-white p-3 shadow">
             ¡Hola! 🙌 Te cuento súper breve:
-            <ul class="list-disc ml-4 mt-2 text-emerald-50">
+            <ul class="list-disc ml-4 mt-2 text-sky-50">
               <li>Atención inmediata 24/7</li>
-              <li>Respuestas en tu voz y tono</li>
+              <li>Respuestas generativas en tu voz y tono</li>
               <li>Integración con WhatsApp y web</li>
             </ul>
             ¿Querés que te muestre una demo?
           </div>
-          <div class="max-w-[80%] rounded-2xl rounded-bl-sm bg-slate-100 p-3">Sí, ¿cómo sería para mi negocio?</div>
-          <div class="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-emerald-600 text-white p-3 shadow">
-            Lo adaptamos a tus preguntas frecuentes y procesos. En 3 pasos lo tenés funcionando. 💬⚡
+          <div class="max-w-[80%] rounded-2xl rounded-bl-sm bg-slate-100 p-3">Sí, ¿qué tengo que hacer para la demo?
+          </div>
+          <div class="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-sky-600 text-white p-3 shadow">
+            Es sencillo, nos pasás la información (PDF/Web/Documentos) y lo entrenamos para que responda a tus preguntas
+            frecuentes y procesos. En 3 pasos lo tenés funcionando. 💬⚡
+          </div>
+          <div class="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-sky-600 text-white p-3 shadow">
+            Te armamos una demo en 48hs, sin cargo. 😉
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROBLEMA / SOLUCIÓN con cards estilo distinto -->
   <section class="mx-auto max-w-7xl px-6 py-20 grid gap-10 md:grid-cols-2" id="problema">
-    <div>
+    <div class="rounded-3xl p-8 bg-sky-50/60 ring-1 ring-sky-100">
       <h2 class="text-3xl font-extrabold tracking-tight">El problema</h2>
-      <p class="mt-4 text-slate-700 text-lg">
-        Te escriben todo el día y preguntan <em>siempre lo mismo</em>. Responder a tiempo demanda horas.
-        Si tardás, perdés ventas y buena experiencia.
-      </p>
+      <p class="mt-4 text-slate-700 text-lg">Te escriben todo el día y preguntan <em>siempre lo mismo</em>. Responder a
+        tiempo demanda horas. Si tardás, perdés ventas.</p>
     </div>
-    <div>
+    <div class="rounded-3xl p-8 bg-white ring-1 ring-slate-100 shadow-sm">
       <h3 class="text-3xl font-extrabold tracking-tight">La solución</h3>
-      <p class="mt-4 text-slate-700 text-lg">
-        Un chatbot con <strong>IA generativa</strong> que responde al instante en WhatsApp y en tu web, con tu voz y tus datos. Vos te enfocás en el negocio, el bot atiende por vos.
-      </p>
+      <p class="mt-4 text-slate-700 text-lg">Un chatbot con <strong>IA generativa</strong> que responde al instante en
+        WhatsApp y en tu web, con tu voz y tus datos.</p>
     </div>
   </section>
 
+  <!-- CÓMO FUNCIONA con iconos circulares -->
   <section id="como-funciona" class="bg-slate-50 border-y border-slate-100">
     <div class="mx-auto max-w-7xl px-6 py-20">
       <h2 class="text-3xl font-extrabold tracking-tight text-center">Cómo funciona</h2>
       <div class="mt-10 grid gap-6 md:grid-cols-3">
         <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
-          <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400"></div>
+          <div class="h-10 w-10 rounded-full bg-gradient-to-br from-sky-400 to-indigo-400"></div>
           <h3 class="mt-4 font-bold text-lg">1) Entendemos tu negocio</h3>
           <p class="mt-2 text-slate-700">Definimos juntos qué consultas responder y el tono de voz.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
-          <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400"></div>
+          <div class="h-10 w-10 rounded-full bg-gradient-to-br from-sky-400 to-indigo-400"></div>
           <h3 class="mt-4 font-bold text-lg">2) Configuramos tu bot</h3>
           <p class="mt-2 text-slate-700">Entrenado con tu web/PDF, integraciones y flujos clave.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
-          <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400"></div>
+          <div class="h-10 w-10 rounded-full bg-gradient-to-br from-sky-400 to-indigo-400"></div>
           <h3 class="mt-4 font-bold text-lg">3) Listo en días</h3>
           <p class="mt-2 text-slate-700">Respuestas al instante 24/7 y derivación a humano.</p>
         </div>
@@ -118,77 +158,178 @@
     </div>
   </section>
 
+  <!-- SERVICIOS -->
   <section id="servicios" class="mx-auto max-w-7xl px-6 py-20">
     <h2 class="text-3xl font-extrabold tracking-tight text-center">Servicios</h2>
     <div class="mt-10 grid gap-6 md:grid-cols-3">
-      <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+      <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
         <h3 class="font-bold">Chatbots con IA generativa</h3>
         <p class="mt-2 text-slate-700">Respuestas naturales, empáticas y precisas (RAG).</p>
       </div>
-      <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+      <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
         <h3 class="font-bold">Integración WhatsApp y Web</h3>
         <p class="mt-2 text-slate-700">Conexión directa con el canal que más usa tu cliente.</p>
       </div>
-      <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+      <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
         <h3 class="font-bold">Integraciones y automatización</h3>
         <p class="mt-2 text-slate-700">CRM, e‑commerce, reservas, pagos y derivación a humano.</p>
       </div>
     </div>
   </section>
 
+  <!-- DEMO -->
   <section id="demo" class="bg-slate-50 border-y border-slate-100">
     <div class="mx-auto max-w-7xl px-6 py-20">
       <div class="grid gap-10 md:grid-cols-2 items-center">
         <div>
-          <h2 class="text-3xl font-extrabold tracking-tight">Ejemplo real</h2>
-          <p class="mt-4 text-lg text-slate-700">
-            Insertá un <strong>video corto</strong> o un <strong>clip de pantalla</strong> con tu bot respondiendo preguntas frecuentes. También podés embeber un chat de prueba.
+          <h2 class="text-3xl font-extrabold tracking-tight">Ejemplo real - 🍔 Restaurante 🍔</h2>
+          <p class="mt-4 text-lg text-slate-700">Chatbot generativo <strong>entrenado con IA</strong> para responder
+            consultas relacionadas a un restaurante.
           </p>
           <ul class="mt-4 text-slate-700 list-disc ml-5">
             <li>Respuestas inmediatas y consistentes</li>
-            <li>Memoria breve y derivación a humano</li>
+            <li>Memoria breve, con voz y tono personalizado</li>
+            <li>Derivación a humano si se requiere</li>
+            <li>Alertamiento instantaneo vía mensajes salientes de WhatsApp</li>
             <li>Reporte simple de interacciones</li>
           </ul>
-          <a id="whatsapp-demo" href="#" class="mt-6 inline-flex rounded-xl px-5 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700 transition">Quiero mi demo</a>
+          <a id="whatsapp-demo" href="#"
+            class="mt-6 inline-flex rounded-xl px-5 py-3 bg-sky-600 text-white font-semibold shadow hover:bg-sky-700 transition"
+            target="_blank" rel="noopener">Quiero
+            mi demo</a>
         </div>
-        <div class="aspect-video rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-500">
-          <span>Video / captura aquí</span>
+        <div
+          class="aspect-video rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-500">
+          <video controls autoplay muted loop class="rounded-2xl shadow w-full h-auto">
+            <source src="video-demo.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PLANES -->
+  <section id="planes" class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-3xl font-extrabold tracking-tight text-center">Planes</h2>
+    <p class="mt-3 text-lg text-slate-600 text-center">
+      Elegí el plan que mejor se adapta a tu negocio. Ambos incluyen IA generativa entrenada con tu información.
+    </p>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <!-- Plan Básico -->
+      <div class="rounded-2xl border border-sky-300 shadow-sm bg-white p-8 relative">
+        <span class="absolute -top-3 left-6 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+          Recomendado
+        </span>
+        <h3 class="text-xl font-bold">Plan Básico</h3>
+        <p class="mt-2 text-slate-600">Setup rápido y accesible. Listo en 1 semana.</p>
+        <p class="mt-6 text-3xl font-extrabold text-sky-700">US$499</p>
+        <p class="text-slate-500 text-sm">setup único + US$50/mes</p>
+        <ul class="mt-6 space-y-3 text-slate-700">
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Entrenado con tu info (PDF/Web)</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> WhatsApp y/o Web</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Respuestas con tu voz y tono</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Vectorstores + Embeddings + RAG</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Derivación a humano + memoria breve
+          </li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Reporte mensual simple</li>
+        </ul>
+        <a id="whatsapp-plan-basico" href="#"
+          class="mt-8 inline-flex w-full justify-center rounded-xl px-5 py-3 bg-sky-600 text-white font-semibold shadow hover:bg-sky-700 transition"
+          target="_blank" rel="noopener">
+          Quiero mi demo
+        </a>
+      </div>
+
+      <!-- Plan Avanzado -->
+      <div class="rounded-2xl border border-slate-200 shadow-sm bg-white p-8">
+        <h3 class="text-xl font-bold">Plan Avanzado</h3>
+        <p class="mt-2 text-slate-600">Integraciones y automatización a medida.</p>
+        <p class="mt-6 text-3xl font-extrabold text-sky-700">A cotizar</p>
+        <p class="text-slate-500 text-sm">+ US$50/mes</p>
+        <ul class="mt-6 space-y-3 text-slate-700">
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Todo lo del Plan Básico</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Integraciones personalizadas (CRM,
+            e-commerce, pagos, reservas)</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Más canales: WhatsApp, Web o Instagram
+          </li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Vectorstores + Embeddings + RAG
+          </li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Reporte mensual detallado y
+            personalizado</li>
+          <li class="flex items-start gap-2"><span class="text-sky-600">✔</span> Cronograma según la complejidad del
+            proyecto</li>
+        </ul>
+        <a id="whatsapp-plan-avanzado" href="#"
+          class="mt-8 inline-flex w-full justify-center rounded-xl px-5 py-3 border border-sky-600 text-sky-600 font-semibold hover:bg-sky-50 transition"
+          target="_blank" rel="noopener">
+          Solicitar cotización
+        </a>
+      </div>
+    </div>
+
+    <!-- Nota al pie -->
+    <p class="mt-8 text-center text-sm text-slate-500">
+      Se puede facturar en <strong>ARS (Mercado Pago)</strong> al tipo de cambio del día. Descuentos disponibles por
+      pago trimestral.
+    </p>
+  </section>
+
+
+  <!-- CTA FINAL -->
   <section id="contacto" class="mx-auto max-w-7xl px-6 py-20">
-    <div class="rounded-3xl bg-gradient-to-br from-emerald-500 to-cyan-500 p-[1px]">
+    <div class="rounded-3xl bg-gradient-to-br from-sky-500 to-indigo-500 p-[1px]">
       <div class="rounded-3xl bg-white p-8 md:p-12 text-center">
         <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">¿Querés que tu negocio atienda al instante?</h2>
-        <p class="mt-3 text-lg text-slate-700">Armemos tu bot en días, no meses. Sin cambiar tu número.</p>
-        <a id="whatsapp-cta" href="#" class="mt-6 inline-flex items-center justify-center rounded-xl px-6 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700 transition">Hablá por WhatsApp</a>
-        <p class="mt-3 text-sm text-slate-500">Dominio listo: <a class="underline hover:text-emerald-600" href="https://milobots.com" target="_blank" rel="noreferrer">milobots.com</a></p>
+        <p class="mt-3 text-lg text-slate-700">Armemos tu bot <strong>en días</strong>, no meses. Ganás
+          <strong>disponibilidad 24/7</strong>, mejorás la <strong>satisfacción</strong>, podés <strong> generar más
+            ventas</strong>.
+        </p>
+        <a id="whatsapp-cta" href="#"
+          class="mt-6 inline-flex items-center gap-2 justify-center rounded-xl px-6 py-3 bg-sky-600 text-white font-semibold shadow hover:bg-sky-700 transition"
+          target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5">
+            <path
+              d="M16 0C7.164 0 0 7.163 0 16c0 2.817.738 5.547 2.137 7.938L0 32l8.344-2.177A15.926 15.926 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.667 0-5.254-.711-7.51-2.061l-.537-.319-4.96 1.292 1.323-4.84-.351-.56C3.775 21.17 3.2 18.624 3.2 16 3.2 8.825 8.825 3.2 16 3.2S28.8 8.825 28.8 16 23.175 29.333 16 29.333zm7.582-10.237c-.404-.2-2.387-1.179-2.756-1.313-.369-.137-.64-.2-.911.201-.27.398-1.045 1.312-1.28 1.582-.235.266-.47.301-.874.1-.404-.2-1.709-.63-3.254-2.008-1.202-1.072-2.015-2.395-2.25-2.8-.235-.398-.025-.613.176-.812.181-.18.404-.47.606-.705.201-.235.268-.398.404-.667.135-.266.066-.5-.033-.7-.1-.2-.911-2.199-1.249-3.016-.33-.794-.667-.685-.911-.698l-.774-.014c-.27 0-.705.101-1.073.502-.369.398-1.404 1.372-1.404 3.345s1.437 3.878 1.635 4.147c.2.266 2.827 4.316 6.853 6.059.959.414 1.708.662 2.293.85.962.307 1.838.263 2.532.16.772-.115 2.387-.975 2.724-1.916.337-.94.337-1.745.236-1.916-.1-.17-.367-.268-.772-.468z" />
+          </svg>
+          Hablá por WhatsApp
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="border-t border-slate-100">
-    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div
+      class="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
       <p>© <span id="year"></span> Milo Bots. Todos los derechos reservados.</p>
       <div class="flex items-center gap-6">
-        <a id="email-link" href="mailto:hola@milobots.com" class="hover:text-slate-700">hola@milobots.com</a>
+        <a id="email-link" href="mailto:abregurobertoa@gmail.com"
+          class="hover:text-slate-700">abregurobertoa@gmail.com</a>
         <a id="whatsapp-footer" href="#" class="hover:text-slate-700">WhatsApp</a>
         <a href="#" class="hover:text-slate-700">Política de privacidad</a>
       </div>
     </div>
   </footer>
 
-  <a id="whatsapp-fab" href="#" class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-emerald-600 text-white px-4 py-3 shadow-lg hover:bg-emerald-700">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.14 1.6 5.95L0 24l6.22-1.63A12 12 0 1012 0c-3.19 0-6.19 1.24-8.48 3.52A12 12 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52z"/></svg>
-    WhatsApp
+  <!-- FAB WhatsApp -->
+  <a id="whatsapp-fab" href="#"
+    class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-sky-600 text-white px-4 py-3 shadow-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-white/60"
+    aria-label="Abrir WhatsApp">
+    <!-- Ícono WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+      <path
+        d="M16 0C7.164 0 0 7.163 0 16c0 2.817.738 5.547 2.137 7.938L0 32l8.344-2.177A15.926 15.926 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.667 0-5.254-.711-7.51-2.061l-.537-.319-4.96 1.292 1.323-4.84-.351-.56C3.775 21.17 3.2 18.624 3.2 16 3.2 8.825 8.825 3.2 16 3.2S28.8 8.825 28.8 16 23.175 29.333 16 29.333zm7.582-10.237c-.404-.2-2.387-1.179-2.756-1.313-.369-.137-.64-.2-.911.201-.27.398-1.045 1.312-1.28 1.582-.235.266-.47.301-.874.1-.404-.2-1.709-.63-3.254-2.008-1.202-1.072-2.015-2.395-2.25-2.8-.235-.398-.025-.613.176-.812.181-.18.404-.47.606-.705.201-.235.268-.398.404-.667.135-.266.066-.5-.033-.7-.1-.2-.911-2.199-1.249-3.016-.33-.794-.667-.685-.911-.698l-.774-.014c-.27 0-.705.101-1.073.502-.369.398-1.404 1.372-1.404 3.345s1.437 3.878 1.635 4.147c.2.266 2.827 4.316 6.853 6.059.959.414 1.708.662 2.293.85.962.307 1.838.263 2.532.16.772-.115 2.387-.975 2.724-1.916.337-.94.337-1.745.236-1.916-.1-.17-.367-.268-.772-.468z" />
+    </svg>
+    <span class="hidden sm:inline">WhatsApp</span>
   </a>
 
   <script>
     // CONFIG — cambiá esto por tu número de WhatsApp y email
-    const WHATSAPP_LINK = 'https://wa.me/5491112345678?text=Hola%20Milo%20Bots!%20Quiero%20un%20demo'; // <-- reemplazar
-    const EMAIL = 'hola@milobots.com'; // <-- opcional
+    const WHATSAPP_LINK = 'https://wa.me/5491125456750?text=Hola%20Milo%20Bots!%20Quiero%20un%20demo';
+    const WHATSAPP_LINK_AVANZADO = 'https://wa.me/5491112345678?text=Hola%20Milo%20Bots!%20Quiero%20solicitar%20una%20cotización';
+    const EMAIL = 'abregurobertoa@gmail.com'; // <-- opcional
 
     document.getElementById('whatsapp-nav').href = WHATSAPP_LINK;
     document.getElementById('whatsapp-hero').href = WHATSAPP_LINK;
@@ -196,9 +337,11 @@
     document.getElementById('whatsapp-cta').href = WHATSAPP_LINK;
     document.getElementById('whatsapp-footer').href = WHATSAPP_LINK;
     document.getElementById('whatsapp-fab').href = WHATSAPP_LINK;
-
+    document.getElementById('whatsapp-plan-basico').href = WHATSAPP_LINK;
+    document.getElementById('whatsapp-plan-avanzado').href = WHATSAPP_LINK_AVANZADO;
     document.getElementById('email-link').href = `mailto:${EMAIL}`;
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
