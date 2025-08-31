@@ -18,29 +18,14 @@
     }
   </style>
 
-  <!-- Google tag (gtag.js) — usando el loader de Google Ads -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17518516174"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag () { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    // GA4 (usa el ID que ves en tu flujo actual)
-    gtag('config', 'G-HRL4XWJMV7');   // ← si tu flujo es otro, cambialo por ese G-....
-
-    // Google Ads
     gtag('config', 'AW-17518516174');
-  </script>
-
-  <!-- Conversión por vista de página (Ads) -->
-  <script>
-    window.addEventListener('load', function () {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17518516174/_n3NCPrSjZEbEM6vvaFB',
-        'value': 1.0,
-        'currency': 'ARS'
-      });
-    });
   </script>
 </head>
 
