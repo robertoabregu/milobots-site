@@ -17,6 +17,16 @@
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif
     }
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17518516174"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag () { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17518516174');
+  </script>
 </head>
 
 <body class="min-h-screen bg-white text-slate-900">
@@ -358,7 +368,6 @@
     document.getElementById('whatsapp-fab').href = WHATSAPP_LINK;
     document.getElementById('whatsapp-plan-basico').href = WHATSAPP_LINK;
     document.getElementById('whatsapp-plan-avanzado').href = WHATSAPP_LINK_AVANZADO;
-    document.getElementById('email-link').href = `mailto:${EMAIL}`;
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
